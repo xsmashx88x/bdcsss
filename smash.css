@@ -1,0 +1,969 @@
+/* edited text */
+.timestamp-p1Df1m:not(.timestampInline-_lS3aK, .timestampVisibleOnHover-9PEuZS) time::after {
+        content: " (" attr(aria-label) ")";
+        color: var(--text-muted);
+        font-size: 0.625rem;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: lowercase;
+}
+
+.edited-1v5nT8:not(.message-translate-indicator) {
+    display: none;
+}
+
+
+/*custom smash icon nadge*/
+    #app-mount [data-user-id="97484502628052992"] .name-3Vmqxm::after,
+    #app-mount [data-user-id="97484502628052992"] .badgeList-2aoHPw::after,
+    #app-mount [data-user-id="97484502628052992"] .profileBadges-2pItdR::before,
+    #app-mount [data-user-id="97484502628052992"] .badges-XRnWAp::after {
+    content: "";
+    position: relative;
+    right: 0px;
+    top: 0px;
+    width: 22px;
+    height: 22px;
+    background: url(https://cdn.discordapp.com/attachments/904117136509792286/966466736167718932/tdbicon0.png) center / 100% 100%;
+}
+
+
+/* Rounded Context Menu */
+.menu-1QACrS, .colorDefault-CDqZdO { 
+    border-radius: 15px; 
+}
+
+
+/* offline tags in member list */
+.offline-22aM7E .wrapper-1VLyxH > svg > foreignObject{mask:url(#svg-mask-avatar-status-round-32);}
+.offline-22aM7E .wrapper-1VLyxH > svg > foreignObject::before {
+content: "";
+width: 10px;
+height: 10px;
+background-color: hsl(214, calc(var(--saturation-factor, 1) * 9.9%), 50.4%);;
+display: block;
+right: 0px;
+bottom: 0px;
+position: absolute;
+border-radius: 50%;
+}
+.offline-22aM7E .wrapper-1VLyxH > svg > foreignObject::after{
+content: "";
+width: 6px;
+height: 6px;
+background-color: #000000;
+display: block;
+right: 2px;
+bottom: 2px;
+position: absolute;
+border-radius: 50%;
+z-index: 999!important;
+}
+.offline-22aM7E{opacity: 1;}
+
+/* Username Background */
+.headerText-2z4IhQ > span::before {
+  content: ''; 
+  width: calc(100% + 7px); 
+  height: 100%;
+  border-radius: 5px;
+  background-color: currentColor; 
+  opacity: 0.0; 
+  position: absolute; 
+  margin-top: 0px; 
+  z-index: -1;
+  margin-left: -3px;
+}
+.headerText-2z4IhQ > span {
+  margin-left: 3px;
+}
+
+
+/* Unclamp the About Me section, so it's not limited to just 6 lines. (normally it cuts off at 6 and adds a ...) */
+.clamped-2ZePhX{
+  -webkit-line-clamp: 190; /*Maximum amount of characters as new lines, unset just breaks links*/
+  max-height:112px;
+  overflow-x: hidden;
+  overflow-y:scroll;
+}
+.clamped-2ZePhX::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+}
+.clamped-2ZePhX::-webkit-scrollbar-track {
+border-radius: 10px; /*How round you want the scrollbar to be. 0 is square, 10px is round.*/
+background-color: rgb(255 255 255 / 10%); /*Edit this to what color you want the track to be.*/
+}
+.clamped-2ZePhX::-webkit-scrollbar-thumb {
+background: linear-gradient(45deg, #00aeff, #a68eff); /* Edit this to whatever color/colors you'd like*/
+border-radius: 10px; /*How round you want the scrollbar thumb to be. 0 is square, 10px is round.*/
+}
+
+/* scroolbar */
+.scrollbarGhostHairline-1mSOM1 {
+max-width: 45vw;
+overflow-x: scroll;
+white-space: pre !important;
+}
+
+/* small searchbar */
+.searchBar-zdmu7v {
+width: 25px;
+transition: .2s;
+}
+.search-1FM8Qc:not(.open-3y3yI_):hover .searchBar-zdmu7v {
+width: 145px;
+transition: .2s;
+}
+
+/* backgroundrole colors */
+.role-2TIOKu {
+position: relative;
+overflow: hidden;
+z-index: 1;
+background: transparent;
+min-height: 22px;
+}
+.roleCircle-1EgnFN::before {
+position: absolute;
+content: "";
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+background: inherit;
+opacity: 0.3;
+z-index: -1;
+}
+
+/* bigger emote preview */
+:root {
+  --emojis-size: 180px; /* Only Change this */
+}
+
+.emojiSection-3Fb9ix .flex-1xMQg5 {
+    display: flex;
+    flex-direction: column;
+    text-align: -webkit-center;
+    align-items: center;
+}
+.emojiSection-3Fb9ix .truncatingText-18osv_ {
+    margin: 0;
+}
+.emojiSection-3Fb9ix .emoji {
+    width: var(--emojis-size) !important;
+    height: var(--emojis-size) !important;
+}
+
+
+
+/* role shit */
+.role-2TIOKu {
+position: relative;
+overflow: hidden;
+z-index: 0;
+}
+.roleCircle-1EgnFN::before {
+content: "";
+position: absolute;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background: inherit;
+opacity: 0.3;
+z-index: -1
+}
+
+.roleName-3910zV {
+z-index: 1
+}
+.item-3XjbnG > .roleDot-2a4Pv7::before {
+content: "";
+height: 100%;
+width: 100%;
+position: absolute;
+background: inherit;
+opacity: 0.15;
+top: 0;
+left: 0;
+border-radius: 4px;
+}
+
+/*member counter */
+#MemberCount {
+border-bottom-color: transparent !important;
+}
+
+
+/*fancy box replies*/
+#app-mount .repliedMessage-3Z6XBG {
+position: absolute;
+top: 25px;
+left: 86px;
+background: var(--background-secondary);
+border: 1px solid var(--background-tertiary);
+width: fit-content;
+max-width: calc(60vw - 240px);
+margin-left: -5px;
+padding: 3px 5px;
+border-radius: 0 4px 4px 4px;
+box-sizing: border-box;
+}
+#app-mount .repliedMessage-3Z6XBG > div {
+position: relative;
+z-index: 1;
+}
+#app-mount .repliedMessage-3Z6XBG img.replyAvatar-sHd2sU {
+display: none;
+}
+#app-mount .repliedMessage-3Z6XBG img.emoji {
+display: inline;
+}
+#app-mount .repliedMessage-3Z6XBG .username-h_Y3Us {
+margin-right: 5px;
+}
+#app-mount .repliedMessage-3Z6XBG:before {
+content: none;
+}
+#app-mount .repliedMessage-3Z6XBG:after {
+content: "";
+position: absolute;
+top: -1px;
+left: -4px;
+z-index: 0;
+width: 6px;
+height: 6px;
+border-radius: 0;
+background: var(--background-secondary);
+border: 1px solid var(--background-tertiary);
+transform: skewX(45deg);
+border-bottom: none;
+border-right: none;
+}
+#app-mount .repliedMessage-3Z6XBG + .contents-2MsGLg .header-2jRmjb {
+margin-bottom: 32px;
+}
+
+
+/* resizable thread window */
+:root {
+    --sidebar-width: 240px; /* change if your theme resizes the sidebar */
+}
+.chat-3bRxxu.threadSidebarOpen-vdkwIh {
+    resize: horizontal;
+    min-width: 400px;
+    max-width: calc(100vw - var(--sidebar-width) - 72px - 400px);
+}
+.chat-3bRxxu:not(.threadSidebarOpen-vdkwIh) {
+    width: unset !important;
+    flex: 1 1 auto;
+}
+.threadSidebar-1o3BTy {
+    width: unset;
+    flex: 1 1 auto;
+}
+
+
+
+
+
+
+
+
+/* channel dm*/
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/ChannelDms.css);
+
+
+
+/*member name transpartransparency */
+.membersGroup-2eiWxl {opacity:1 !important}
+
+:root {
+  --info-warning-foreground: #1A1A1A; /* paste color */
+}
+
+/*Scrollable Codeblocks */
+.scrollbarGhostHairline-1mSOM1 {
+    max-width: 45vw;
+    overflow-x: scroll;
+    white-space: pre !important;
+}
+
+
+/* theme main accent */
+.theme-dark {
+  --SKIN-accent-primary: #186865;
+--SKIN-accent-secondary: #3f6968; /* This one is for hover */
+--SKIN-accent-tertiary: #0a8884; /* This one is for active which doesnt apply to all elements but yea */
+}
+
+
+:root {
+--av-radius: 50% !important;
+}
+
+:root {
+--background-mentioned-border:  rgb(102, 255, 255);
+    --spine-color: var(--background-secondary-alt);
+    --mentioned-spine-color: var(--red-alt);
+}
+
+/*enhanced embeds */
+:root{
+    --embed-border-radius: 8px;
+}
+.embed-hKpSrO {
+    border-radius: var(--embed-border-radius);
+}
+.embed-hKpSrO code{
+    background: var(--background-secondary);
+}
+:root{
+    --embed-line-width: 256px;
+}
+.embedWrapper-1MtIDg{
+}
+.embedFull-1HGV2S {
+
+    border-left: calc(4px + var(--embed-line-width)) solid var(--background-accent);
+    background: var(--background-secondary);
+}
+.grid-1aWVsE {
+    margin-left: calc( -1 * var(--embed-line-width));
+    z-index: 1;
+}
+.embedFull-1HGV2S:after, .embedFull-1HGV2S:before{
+    content: "";
+    height: 100%;
+    width: var(--embed-line-width);
+    position: absolute;
+    top: 0;
+    left: calc(-1 * var(--embed-line-width));
+}
+.embedFull-1HGV2S:after{
+    background: linear-gradient(to right, transparent, var(--background-secondary));
+}
+.embedFull-1HGV2S:before{
+    background: var(--background-secondary);
+    opacity: .8;
+}
+
+
+/* Make PermissionViewers text more consistent with Discords */
+.member-perms-title{text-transform:uppercase;color:var(--header-secondary);font-weight:700;margin-bottom:8px;font-size:12px;}
+
+#permissions-modal{height: 90%;}
+
+
+/*Simple 2016 Status  */
+@import url("https://zuzumi-f.github.io/classic-discord-status/2016-status.css");
+
+/*Moves the role icon from the right of a person's name to the left made by */
+[class*="roleIcon"] {
+float: left;
+margin-left: 0rem;
+margin-right: .25rem;
+}
+
+
+/*Hide "Invite to server" context menu item
+Prevents accidentally sending invite links to people. 
+CSS*/
+#user-context-invite-to-server {
+display: none;
+}
+
+
+/*Remove sticker from form*/
+.stickerButton-1-nFh2 {
+display: none;
+}
+	
+/*Remove gift from form*/
+.buttons-uaqb-5>.button-f2h6uQ:not(.BD-TeX-plugin-button)> :not(.translateButton-DhP9x8) {
+display: none;
+}
+
+
+/*User connection links*/
+.connectedAccount-36nQx7 {
+display:flex;
+flex-wrap:wrap;
+height:auto;
+}
+
+.connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F {
+    width:24px;
+    height:24px;
+}
+.connectedAccount-36nQx7 .anchor-3Z-8Bb {
+    width:100%;
+    display:block;
+    position:relative;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    line-height:normal;
+}
+.connectedAccount-36nQx7 .anchor-3Z-8Bb svg {
+    display:none;
+}
+
+.connectedAccount-36nQx7 .anchor-3Z-8Bb:after {
+    content:attr(href);
+    width:100%;
+    white-space:nowrap;
+}
+
+/*Minified search bar */
+:root {
+--transitionspeed: 0.25s;
+}
+.search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ {width: 27px; transition: var(--transitionspeed); background-color: transparent;}
+.search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ {width: 240px; background-color: var(--background-tertiary);}
+.search-2Mwzzq:not(.open-1F8u2c) .iconContainer-1RqWJj {transform: scale(1.3); transition: var(--transitionspeed);}
+.search-2Mwzzq:not(.open-1F8u2c):hover .iconContainer-1RqWJj {transform: scale(1);}
+.search-2Mwzzq:not(.open-1F8u2c) .icon-18rqoe {color: var(--text-normal);}
+.search-2Mwzzq:not(.open-1F8u2c):hover .icon-18rqoe {color: var(--text-muted);}
+
+
+/*Chrome style link previews */
+.theme-dark {
+    --linkpreview-background:#35363a;
+    --linkpreview-color:#e8eaed;
+    --linkpreview-border:#2f3033;
+}
+.theme-light {
+    --linkpreview-background:#dee1e6;
+    --linkpreview-color:#3c4043;
+    --linkpreview-border:transparent;
+}
+.markup-2BOw-j .anchor-3Z-8Bb:after {
+    content:attr(href);
+    display:flex;
+    align-items:center;
+    z-index:9999;
+    background:var(--linkpreview-background);
+    line-height:normal;
+    font-weight:normal;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+    color:var(--linkpreview-color);
+    font-size:12px;
+    padding:3px 4px;
+    padding-right:6px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    opacity:0;
+    transition:200ms ease;
+    white-space:nowrap;
+    box-shadow:inset 0 0 0 1px var(--linkpreview-border);
+    border-top-right-radius:3px;
+    pointer-events:none;
+}
+.markup-2BOw-j .anchor-3Z-8Bb:hover:after {
+    opacity:1;
+}
+.base-gE7OpD {
+    z-index:-1;
+}
+
+
+ /*Display user container in header */
+.container-3baos1 {
+position: absolute;
+top: 0;
+right: 0;
+height: 48px;
+width: 220px;
+box-sizing: border-box;
+}
+.sidebar-2K8pFh {
+z-index: 101;
+}
+.container-1r6BKw {
+padding-right: 220px;
+}
+
+ /*Fix discord's new attachments overflowing past chat container  */
+.messageAttachment-1aDidq {
+max-width: 100%;
+min-width: 0;
+}
+
+
+/*Replaces the long discord message links with "Jump to Message"  in chat credit to \_david\_*/
+/* One by David. */
+[title^="https://discord.com/channels/"], [title^="https://ptb.discord.com/channels/"], [title^="https://canary.discord.com/channels/"]   {
+    line-height:0;
+    font-size:0;
+}
+[title^="https://discord.com/channels/"]::before, [title^="https://ptb.discord.com/channels/"]::before, [title^="https://canary.discord.com/channels/"]::before{
+    content:'Jump to Message';
+    font-size:16px;
+    font-weight:700;
+}
+/* One by ThatOtherAndrew/PowerCord*/
+[title^="https://discord.com/channels/"], [title^="https://ptb.discord.com/channels/"], [title^="https://canary.discord.com/channels/"] {
+  line-height: 0;
+  font-size: 0;
+  text-decoration-color: #fff !important;
+}
+[title^="https://discord.com/channels/"]::before, [title^="https://ptb.discord.com/channels/"]::before, [title^="https://canary.discord.com/channels/"]::before {
+  content: "? Jump to Message";
+  font-size: 16px;
+  user-select: text;
+  font-weight: 500;
+  transition: background-color 50ms ease-out, color 50ms ease-out;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0 2px;
+  background: hsla(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.3);
+  color: hsl(236, calc(var(--saturation-factor, 1) * 83.3%), 92.9%);
+}
+[title^="https://discord.com/channels/"]:hover::before, [title^="https://ptb.discord.com/channels/"]:hover::before, [title^="https://canary.discord.com/channels/"]:hover::before {
+  background-color: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+  color: #fff;
+}
+
+
+/*Change the color of the status indicators*/
+Change the color of the status indicators
+rect[fill^="hsl(262,"] {fill: purple}
+2	rect[fill^="hsl(139,"] {fill: lime}
+3	rect[fill^="hsl(38,"] {fill: yellow}
+4	rect[fill^="hsl(359,"] {fill: red}
+5	rect[fill^="hsl(214,"] {fill: white}
+
+
+
+/*Add Icons to Settings Window Menus*/
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+:root {
+--settingsiconssize: 18px;
+--settingsiconsgap: 14px;
+}
+
+/*Change avatar shapes */
+:root {
+--avatar-radius: 5px;
+}
+.userInfo-2zN2z8 .avatar-3W3CeO svg foreignObject, /*Friend list avatars*/
+.avatar-3uk_u9 svg:not(.linkButtonIcon-Mlm5d6) foreignObject, /*Server members avatars*/
+.avatar-37jOim foreignObject, /*User card avatar*/
+.container-3baos1 .avatar-SmRMf2 svg foreignObject, /*Status bar avatar*/
+.wrapper-25eVIn svg foreignObject, /*Guild icons*/
+.headerAvatar-2MDZJn svg foreignObject, /*Active now avatars*/
+.avatar-AvHqJA svg foreignObject { /*Profile modal avatar*/
+mask: none;
+border-radius: var(--avatar-radius);
+}
+.avatar-1BDn8e.clickable-1bVtEA, /*Chat avatar*/
+.repliedMessage-VokQwo .replyAvatar-1K9Wmr { /*Replying to avatar*/
+border-radius: var(--avatar-radius);
+}
+
+
+/*Disable discord's overcomplicated and extremely laggy settings animations. */
+.layer-3QrUeG {
+transform: none !important;
+opacity: 1 !important;
+}
+
+.layers-3iHuyZ>.layer-3QrUeG.animating-rRxada *,
+.layers-3iHuyZ>.layer-3QrUeG.animating-rRxada {
+pointer-events: auto !important;
+will-change: unset;
+}
+	
+.animating-rRxada.stop-animations {
+z-index: 100 !important;
+}
+
+
+/*Keep the search buttons(back, # # #, next) on the bottom. */
+.container-NdaZbY {
+position:sticky;
+bottom:0;
+background-color: var(--background-secondary);
+z-index:1;
+}
+
+/*color member list*/
+.layout-1qmrhw {
+  opacity: 1.0;
+}
+.layout-1qmrhw:hover, .colorDefault-CDqZdO ~ .nameAndDeccorators-3ERwy2{
+  margin-left: 3px;
+  transition: 0.1s ease;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+.roleColor-nA7BqX::after {
+  content:"";
+  background: linear-gradient(45deg, currentcolor, #0000);
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 2px);
+  margin: left;
+  left: 0;
+  bottom: 0; 
+  opacity: 0.1;
+  border-radius: 10px;
+}
+
+/*Role color background in member list */
+span.roleColor-nA7BqX::after {
+2	content: "";
+3	background: currentColor;
+4	width: 100%;
+5	height: 100%;
+6	position: absolute;
+7	opacity: 0.11;
+8	left: 0;
+9	top: 0;
+10	}
+
+/*Make switches be a button */
+#app-mount .container-3auIfb, #app-mount .bd-switch-body {
+width: 20px;
+height: 20px;
+background: transparent !important;
+}
+#app-mount .container-3auIfb .slider-TkfMQL, #app-mount .bd-switch-body .bd-switch-slider {
+left: -6px !important;
+}
+#app-mount .container-3auIfb .slider-TkfMQL > rect, #app-mount .bd-switch-body .bd-switch-slider rect {
+height: 20px !important;
+width: 20px !important;
+x: 4px !important;
+y: 0px !important;
+rx: 5;
+fill: var(--background-tertiary);
+}
+
+
+
+
+/*Revert Role Design*/
+.role-2irmRk{
+background: transparent;
+border: 1px solid;
+border-radius: 11px;
+}
+.roleCircle-3xAZ1j {
+margin-left: 0;
+}
+.addButton-pcyyf6.role-2irmRk {
+border-color: #4f545c;
+}
+.addButtonIcon-1NMJ8u {
+width: 10px;
+height: 10px;
+}
+
+
+
+/*Revert Member Icon: */
+.icon-22AiRD [d="M6 1C3.243 1 1 3.244 1 6c0 2.758 2.243 5 5 5s5-2.242 5-5c0-2.756-2.243-5-5-5zm0 2.376a.625.625 0 110 1.25.625.625 0 010-1.25zM7.5 8.5h-3v-1h1V6H5V5h1a.5.5 0 01.5.5v2h1v1z"] {
+d: path("M 7 4.003 C 7 5.1055 6.103 6.003 5 6.003 C 3.8975 6.003 3 5.1055 3 4.003 C 3 2.9005 3.897 2.003 5 2.003 C 6.103 2.003 7 2.9005 7 4.003 Z M 1 9.503 C 1 7.7365 2.645 6.503 5 6.503 C 7.3555 6.503 9 7.7365 9 9.503 V 10.003 H 1 V 9.503 Z M 10 10.003 H 11 V 9.503 C 11 8.2217 10.1349 7.2207 8.7607 6.7676 C 9.5311 7.4563 10 8.403 10 9.503 V 10.003 Z M 7.4417 5.9539 C 8.3329 5.7522 9 4.9539 9 4 C 9 2.9846 8.2347 2.1411 7.2485 2.0183 C 7.7161 2.5476 8 3.2426 8 4 C 8 4.7244 7.7444 5.3871 7.3189 5.9051 C 7.3601 5.9209 7.4011 5.9371 7.4417 5.9539 Z");
+}
+
+
+/*Username Background*/
+.cozy-3raOZG .headerText-3Uvj1Y > .username-1A8OIy::before {
+content: ''; 
+width: calc(100% + 7px); 
+height: 100%;
+border-radius: 5px;
+background-color: currentColor; 
+opacity: 0.3; 
+position: absolute; 
+top: 0; 
+z-index: -1;
+/* repairs left shift*/
+left: -3px;
+}
+.cozy-3raOZG .headerText-3Uvj1Y > .username-1A8OIy::after {
+content: ":";
+}
+/* repairs left shift */
+.cozy-3raOZG .headerText-3Uvj1Y > .username-1A8OIy {
+margin-left: 3px;
+}
+
+/* Removes Chatbox from channel that don't allow you to communicate */
+.channelTextAreaDisabled-8rmlrp, .channelTextAreaDisabled-8rmlrp > .scrollableContainer-2NUZem{
+animation: nochat .000001ms forwards;
+}
+@keyframes nochat{
+to{height: 0}
+}
+/* Removes Follow banner on bottom of channels */
+.wrapper-39oAo3 {display: none;}
+
+
+/* Changes the order of Discord so that the Members are on the left, and the Channels list and Guilds are on the right. */
+.container-1eFtFS, .content-1SgpWY, .content-1jQy2l {
+2	flex-direction: row-reverse;
+3	}
+
+/* Widescreen Settings by @Opus */
+1   .sidebarRegion-1VBisG, .sidebarRegionScroller-FXiQOh {
+1   justify-content: unset;
+flex: unset
+}
+1   .contentColumn-1C7as6, .customColumn-2n-oKU, .hero-1aNo0v {
+max-width: unset;
+}
+1   .accountProfileCard-lbN7n- {
+max-width: 750px;
+}
+1   .notificationSettings-1U0JsJ {
+max-width: 45%;
+
+
+
+/****Better Jump To Present Button****/
+.scroller-3X7KbA {
+contain: unset;
+padding-bottom: 190px;
+}
+.scroller-3X7KbA::before {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  width: 72px;
+  height: 190px;
+  background: linear-gradient(transparent, var(--background-tertiary) 30%);
+  z-index: 1;
+}
+.tutorialContainer-2jwoiB {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+.tutorialContainer-2jwoiB + .listItem-3SmSlK {
+  position: fixed;
+  bottom: 58px;
+  contain: none;
+  z-index: 1;
+}
+
+
+/* Better Jump To Present Button */
+[class*="jumpToPresentBar"] {
+    display: contents;
+}
+[class*="jumpToPresentBar"] > button:first-child {
+    display: none;
+}
+[class*="jumpToPresentBar"] > button:last-child {
+    position: absolute;
+    z-index: 1;
+    bottom: 24px;
+    right: 22px;
+    padding: 8px !important;
+    height: auto;
+    background-color: #5865F2;
+    box-shadow: var(--elevation-high);
+    border-radius: 100px;
+    display: flex;
+    font-size: 0px;
+    color: transparent;
+    transition: font-size .2s .1s, color .2s, padding .4s .1s;
+}
+[class*="jumpToPresentBar"] > button svg {
+    order: -1;
+    margin: 0px;
+    height: 24px;
+    width: 24px;
+    top: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: #FFFFFF;
+    transition: margin .6s;
+}
+[class*="jumpToPresentBar"]:hover > button {
+    padding: 8px 18px !important;
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: font-size .2s, color .2s .1s, padding .4s;
+}
+[class*="jumpToPresentBar"]:hover > button svg {
+    margin-right: 2px;
+    margin-left: -6px;
+}
+
+
+/* Emoji Auto-Fill Animation */
+.base-2v-uc0 {
+transition: all 0.5s;
+}
+.base-2v-uc0:hover {
+transition: all 0s;
+transform: scale(1.02);
+}
+
+/*Scrollable Codeblocks*/
+.scrollbarGhostHairline-1mSOM1 {
+max-width: 45vw;
+overflow-x: scroll;
+white-space: pre !important;
+}
+
+ChannelDms Adjustments  @import url(https://maendisease.github.io/BetterDiscordStuff/css/ChannelDms.css);
+
+
+/* Bearable Inbox*/
+CSS
+1	@import url(https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css);
+
+/* /* offline tags in member list */ */
+.embedVideoImageComponent-3Clc3C {
+justify-content: unset;
+align-items: unset;
+}
+
+/* Username Background */
+.headerText-2z4IhQ > span::before {
+content: ''; 
+width: calc(100% + 7px); 
+height: 100%;
+border-radius: 5px;
+background-color: currentColor; 
+opacity: 0.3; 
+position: absolute; 
+margin-top: 0px; 
+z-index: -1;
+margin-left: -3px;
+}
+.headerText-2z4IhQ > span {
+margin-left: 3px;
+}
+
+
+/* Puts the BetterDiscord section of settings at the top of settings page siderbar*/
+CSS
+.bd-sidebar-header, 
+[aria-controls="settings-tab"], 
+[aria-controls="emotes-tab"], 
+[aria-controls="customcss-tab"], 
+[aria-controls="plugins-tab"],
+[aria-controls="themes-tab"], 
+[aria-controls="themes-tab"]      + .separator-2wx7h6, 
+[aria-controls="pluginrepo-tab"], 
+[aria-controls="pluginrepo-tab"] + .separator-2wx7h6, 
+[aria-controls="themerepo-tab"] + .separator-2wx7h6, 
+[aria-controls="themerepo-tab"]{
+order: -1;
+}
+
+
+/*Quote" style replied message*/
+#app-mount .repliedMessage-3Z6XBG {
+  position: absolute;
+  top: 25px;
+  left: 86px;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-tertiary);
+  width: fit-content;
+  max-width: calc(60vw - 240px);
+  margin-left: -5px;
+  padding: 3px 5px;
+  border-radius: 0 4px 4px 4px;
+  box-sizing: border-box;
+}
+#app-mount .repliedMessage-3Z6XBG > div {
+  position: relative;
+  z-index: 1;
+}
+#app-mount .repliedMessage-3Z6XBG img.replyAvatar-sHd2sU {
+  display: none;
+}
+#app-mount .repliedMessage-3Z6XBG img.emoji {
+  display: inline;
+}
+#app-mount .repliedMessage-3Z6XBG .username-h_Y3Us {
+  margin-right: 5px;
+}
+#app-mount .repliedMessage-3Z6XBG::before {
+  content: none;
+}
+#app-mount .repliedMessage-3Z6XBG::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -4px;
+  z-index: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 0;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-tertiary);
+  transform: skewX(45deg);
+  border-bottom: none;
+  border-right: none;
+}
+#app-mount .repliedMessage-3Z6XBG + .contents-2MsGLg .header-2jRmjb {
+  margin-bottom: 32px;
+}
+
+
+
+
+/* Fancy roles [remove the 1]*/
+1  .rolesList-3uZoaa {
+1  gap: 8px;
+}
+1  .role-2TIOKu {
+1  margin: 0;
+1  height: auto;
+1  padding: 6px 8px;
+1  border-radius: 4px;
+1  gap: 4px;
+1  position: relative;
+1  overflow: hidden;
+}
+1  .role-2TIOKu:hover .roleCircle-1EgnFN {
+1  width: 100%;
+1  opacity: 1;
+}
+1  .role-2TIOKu:hover .roleCircle-1EgnFN:not(:empty) ~ .roleName-2ZJJYR {
+1  margin-left: 22px;
+}
+1  .roleCircle-1EgnFN {
+1  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  width: 85%;
+  -webkit-mask: linear-gradient(90deg, black, transparent);
+          mask: linear-gradient(90deg, black, transparent);
+1  filter: none;
+  opacity: 0.3;
+  justify-content: flex-start;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.15s ease;
+}
+1  .roleName-2ZJJYR {
+  position: relative;
+  margin: 0;
+1  transition: margin-left 0.15s ease;
+}
+1  .roleRemoveIcon-387wKV {
+  width: 16px;
+  height: 16px;
+}
+
+/*fancy role stuff*/
+1  .role-2TIOKu{background: transparent;border: 1px solid;border-radius: 11px;}
+1  .roleCircle-1EgnFN {margin-left: 0;}
+1  .addButton-1_dZYu.role-2TIOKu {border-color: #4f545c;}
+1  .addButtonIcon-3HZ_2f {width: 10px;height: 10px;}
+
+
+
+
+
